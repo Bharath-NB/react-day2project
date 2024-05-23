@@ -11,7 +11,7 @@ const App = () => {
       <h1>Friends</h1>
       <ul>
         {
-          friends.map(friend => 
+          friends.map((friend, index) => 
             <li key={index}>{friend.name} {friend.age}</li>
           )
         }
@@ -19,3 +19,5 @@ const App = () => {
     </div>
   )
 }
+
+export default App;
